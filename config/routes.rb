@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "articles#index"
 
   # GET /articles are mapped to the index action of ArticlesController
   get "/articles", to: "articles#index"
