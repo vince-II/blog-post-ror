@@ -10,4 +10,7 @@ Rails.application.routes.draw do
 
   # GET /articles are mapped to the index action of ArticlesController
   get "/articles", to: "articles#index"
+
+  # get single article # goes to views/articles/show since its articles#show
+  get "/articles/:id", to: "articles#show"
 end
