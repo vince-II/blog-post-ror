@@ -8,8 +8,9 @@
   <% @articles.each do |article| %>
     <li>
       <%# THIS WILL BE FORWARD TO THE ENDPOINT %>
-      <a href="/articles/<%= article.id%>"></a>
-      <%= article.title %>
+      <a href="/articles/<%= article.id%>">
+        <%= article.title %>
+      </a>
     </li>
   <% end %>
 </ul>
